@@ -61,8 +61,9 @@ export default class App extends React.Component {
 
         <div>
         <Route exact path="/" render={()=><h1>Welcome Home ;)</h1> } />
-        <Route exact path="/services" component={this.Services} />
+        <Route exact path="/services" />
         <Route  path="/contact" render={()=><h1>Contact US on : khaled_amari@live.fr</h1> } />
+        <this.Services />
         </div>
       </div>
     );
