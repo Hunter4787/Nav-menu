@@ -45,15 +45,15 @@ export default class App extends React.Component {
             </DropdownToggle>
             <DropdownMenu>
               <DropdownItem >
-              <Link to="/services/entrepreneurs" className={(this.state.isclicked)?"clicked":""} onClick={this.Clicked}>For entrepreneurs</Link>
+              <Link to="/services/entrepreneurs">For entrepreneurs</Link>
               </DropdownItem>
 
               <DropdownItem >
-                <Link to="/services/students" className={(this.state.isclicked)?"clicked":""} onClick={this.Clicked}>for students</Link>
+                <Link to="/services/students">for students</Link>
               </DropdownItem>
 
               <DropdownItem>
-                <Link to="/services/hobbyiests" className={(this.state.isclicked)?"clicked":""} onClick={this.Clicked}>for hobbyiests</Link>
+                <Link to="/services/hobbyists">for hobbyiests</Link>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -63,11 +63,11 @@ export default class App extends React.Component {
 
         <div>
         <Route exact path="/" render={()=><h1>Welcome Home ;)</h1> } />
-        <Route exact path="/services" component={this.Services}/>
+        <Route exact path="/services" render={()=><h2>Check Our Services</h2>}/>
         <Route path="/services/entrepreneurs" render={()=><h2>This is your space 'Entrepreneurs'</h2>}/>
         <Route path="/services/students" render={()=><h2>This is your space 'Students'</h2>}/>
         <Route path="/services/hobbyists" render={()=><h2>This is your space 'Hobbyists'</h2>} />
-        <Route  path="/contact" render={()=><h1>Contact US on : khaled_amari@live.fr</h1> } />
+        <Route path="/contact" render={()=><h1>Contact US on : khaled_amari@live.fr</h1> } />
         </div>
       </div>
     );
