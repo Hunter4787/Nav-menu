@@ -1,3 +1,7 @@
-.link-color{
-  color: black !important;
+.link-top{
+  padding: 8px 16px;
+}
+
+.clicked{
+  color: #8230AC
 }
